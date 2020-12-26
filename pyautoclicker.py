@@ -27,11 +27,11 @@ def pushButton(key_start="s", key_pause="p", key_stop="t", sleep_time=0):
             # Runs the program after clicking on the button
             if keyboard.is_pressed(key_start):
                 p = 0
-        # Pauses auto click (double click on keyboard)
+        # Pauses auto click (triple click on keyboard)
         if keyboard.is_pressed(key_pause):
             p = 1
             continue
-        # When pressed, ends the program (double click on keyboard)
+        # When pressed, ends the program (triple click on keyboard)
         if keyboard.is_pressed(key_stop):
             break
         # Time delay if the site is blocking fast clickers
